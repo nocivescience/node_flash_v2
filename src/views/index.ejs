@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page</title>
+    <%- include _header.ejs %>
+</head>
+
+<body>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+
+                <div class="card card-body">
+
+                    <h1>Register</h1>
+                    <form action="/register" method="POST">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Write your email" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Write your password"
+                                class="form-control">
+                        </div>
+                        <button class="btn btn-success btn-block">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-4 mt-3">
+                <div class="card card-body">
+                    <h1>Datos Personales</h1>
+                    <form action="/register2" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Escribe tu nombre" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="apellido" placeholder="Escribe tu apellido"
+                                class="form-control">
+                        </div>
+                        <button class="btn btn-success btn-block">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-4 mt-3">
+                <div class="card card-body">
+                    <h1>Ciudades en las que vives</h1>
+                    <form action="/register3" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="pais" placeholder="Escribe tu país" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="ciudad" placeholder="Escribe tu ciudad"
+                                class="form-control">
+                        </div>
+                        <button class="btn btn-success btn-block">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
